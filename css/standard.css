@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Jurassic Park";
+    src: url(../fonts/jurassic_park.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Levi Windows";
+    src: url(../fonts/levi_windows.ttf) format("truetype");
+}
+
+html {
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-family: "Jurassic Park", sans-serif;
+    font-weight: 100;
+    font-size: 4em;
+    color: #4CAF50;
+    padding: 0.4em 0.3em;
+}
+
+h2 {
+    font-family: "Levi Windows", sans-serif;
+    font-size: 1.5em;
+    color: #FF5722;
+}
+
+h3 {
+    font-family: "Levi Windows", sans-serif;
+    font-size: 1.2em;
+    color: #2196F3;
+}
+
+p {
+    font-family: "Levi Windows", sans-serif;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.color-herbivore {
+    color: #0B5C1C;
+}
+
+.color-carnivore {
+    color: #6C0202;
+}
+
+.color-aviary {
+    color: #D8BF00;
+}
+
+.color-docks {
+    color: #004BEC;
+}
+
+.color-building {
+    color: #777777;
+}
