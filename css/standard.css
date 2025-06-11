@@ -1,3 +1,10 @@
+/* 
+ * Standard CSS file for Jurassic Park website
+ * This file contains the basic styles for the website, including font definitions and general styles for headings and paragraphs.
+ * Will be used across all pages to maintain a consistent look and feel.
+ * And will be updated as needed to reflect changes in design or functionality.
+ */
+
 @font-face {
     font-family: "Jurassic Park";
     src: url(../fonts/jurassic_park.ttf) format("truetype");
@@ -12,27 +19,32 @@ html {
     font-size: 1.2rem;
 }
 
+/* Dev note: */
+/* Use only for special titles such as the name of a dino/building on the info page. */
 h1 {
     font-family: "Jurassic Park", sans-serif;
     font-weight: 100;
     font-size: 4em;
     color: #4CAF50;
-    padding: 0.4em 0.3em;
+    padding: 0.4em 0.2em;
 }
 
 h2 {
     font-family: "Levi Windows", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #FF5722;
+    padding: 0.2em 0.1em;
 }
 
 h3 {
     font-family: "Levi Windows", sans-serif;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #2196F3;
+    padding: 0.2em 0.1em;
 }
 
 p {
+    padding: 0.1em 0.05em;
     font-family: "Levi Windows", sans-serif;
     font-size: 1em;
     color: #333;
@@ -40,6 +52,8 @@ p {
     text-align: justify;
 }
 
+/* Color classes for different types of dinosaurs and buildings. */
+/* Will be used to give every type of thing on the info page a different color for the title. */
 .color-herbivore {
     color: #0B5C1C;
 }
