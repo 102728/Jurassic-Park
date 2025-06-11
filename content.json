@@ -1,5 +1,5 @@
 {
-    "dinos": {
+    "Dinosaurs": {
         "Herbivores": {
             "Triceratops": [
                 "Western North America", "Late Cretaceous", "Triceratops Horridus / Triceratops Prorsus"
@@ -42,6 +42,26 @@
         },
         "Pteranodon": [
             "North America", "Late Cretaceous", "Pteranodon Longiceps / Pteranodon Sternbergi"
+        ]
+    },
+    "Buildings": {
+        "Visitor Centre": [
+            ""
+        ],
+        "Safari Lodges": [
+            ""
+        ],
+        "Tour Station": [
+            ""
+        ],
+        "River Cruise": [
+            ""
+        ],
+        "Helicopter Platform": [
+            ""
+        ],
+        "Toilet": [
+            ""
         ]
     }
 }
