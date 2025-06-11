@@ -1,0 +1,47 @@
+{
+    "dinos": {
+        "Herbivores": {
+            "Triceratops": [
+                "Western North America", "Late Cretaceous", "Triceratops Horridus / Triceratops Prorsus"
+            ],
+            "Brachiosaurus": [
+                "North America", "Late Jurassic", "Brachiosaurus Altithorax"
+            ],
+            "Gallimimus": [
+                "Mongolia", "Late Cretaceous", "Gallimimus Bullatus"
+            ],
+            "Parasaurolophus": [
+                "Western North America, Asia", "Late Cretaceous", "Parasaurolophus Walkeri / Parasaurolophus Tubicen / Parasaurolophus Cyrtocristatus"
+            ],
+            "Stegosaurus": [
+                "Western North America, Portugal", "Late Jurassic", "Stegosaurus Stenops / Stegosaurus Ungulatus / Stegosaurus Sulcatus"
+            ]
+        },
+        "Carnivores": {
+            "Metriacanthosaurus": [
+                "United Kingdom", "Late Jurassic", "Metriacanthosaurus Parkeri"
+            ],
+            "Dilophosaurus": [
+                "North America", "Early Jurassic", "Dilophosaurus Wetherilli"
+            ],
+            "Tyrannosaurus": [
+                "Western North America", "Late Cretaceous", "Tyrannosaurus Rex / Tyrannosaurus Mcraeensis"
+            ],
+            "Velociraptor": [
+                "Asia", "Late Cretaceous", "Velociraptor Mongoliensis / Velociraptor Osmolskae"
+            ],
+            "Baryonyx": [
+                "United Kingdom", "Early Cretaceous", "Baryonyx Walkeri"
+            ],
+            "Proceratosaurus": [
+                "United Kingdom", "Middle Jurassic", "Proceratosaurus Bradleyi"
+            ],
+            "Segisaurus": [
+                "Western North America", "Early Jurassic", "Segisaurus Halli"
+            ]
+        },
+        "Pteranodon": [
+            "North America", "Late Cretaceous", "Pteranodon Longiceps / Pteranodon Sternbergi"
+        ]
+    }
+}
