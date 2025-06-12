@@ -1,41 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="w-full h-full">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./node_modules/95css/css/95css.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>The Jurassic Park Map</title>
+
+    <link rel="stylesheet" href="node_modules/95css/css/95css.css">
+    <link rel="stylesheet" href="css/standard.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
-<body>
 
-<div class="container grid w-full">
-    <!-- Linker kolom -->
-    <dialog id="map" class="dialog-body col-span-6 map">
-         <dialog id="legenda" class="dialog-body col-span-4 legenda is-sm"></dialog>
-    </dialog>
+<body class="w-full h-full">
+    <div class="grid w-full h-full">
+        <dialog id="map" class="dialog-body col col-span-6 map">
+            <dialog id="legend" class="dialog-body col-span-4 legend"></dialog>
+        </dialog>
 
-    <!-- Rechter kolom -->
-    <dialog id="title" class="dialog-body col-span-6 title">
-        <h1>Welcome to the map of Jurassic Park!</h1>
-    </dialog>
-    <dialog id="info" class="dialog-body col-span-6 info">
-        <dialog id="text" class="dialog-body col-span-4 text is-sm">
-            <h2>A Detailed map of Jurassic Park is here!</h2>
-        <p>his is a website with the entire map of Jurassic Park, it has a *lot* of detail. This includes information about every dinosaur as well as every accommodation and attraction available in Jurassic Park. Just click one of the many icons on the map to find out more!<br><br>
+        <dialog id="banner" class="dialog-body col col-span-6 banner">
+            <h1>Welcome to the map of Jurassic Park!</h1>
+        </dialog>
 
-There is so much too explore, we even made a little game for you to play which tracks your high score and saves it to the server to show on the leader board if you have enough points.</p>
-        </dialog>
-        <dialog id="picture" class="dialog-body picture col-span-4 text is-sm" style="background-image: url('images/dino.png');">
-        </dialog>
-        <dialog id="searchInput" class="dialog-body searchInput col-span-4 text is-sm">
-        </dialog>
-        <dialog id="searchResults" class="dialog-body searchResults col-span-4 text is-sm">
-        </dialog>
-    </dialog>
-</div>
+        <dialog id="content" class="dialog-body col col-span-6 h-full content">
+            <dialog id="text" class="dialog-body col-span-6 text">
+                <h2>A Detailed map of Jurassic Park is here!</h2>
+                <p>
+                    This is a website with the entire map of Jurassic Park, it has a *lot* of detail. This includes
+                    information about every dinosaur as well as every accommodation and attraction available in Jurassic
+                    Park. Just click one of the many icons on the map to find out more!
+                </p>
+                <p>
+                    There is so much too explore, we even made a little game for you to play which tracks your high
+                    score and saves it to the server to show on the leader board if you have enough points.
+                </p>
+            </dialog>
+            <dialog id="picture" class="dialog-body col-span-6 picture"></dialog>
+            <dialog id="searchInput" class="dialog-body col-span-6 searchInput">
+                <icon></icon>
+                <span>Click and type to search.</span>
+            </dialog>
+            <dialog id="searchResults" class="dialog-body col-span-6 searchResults"></dialog>
+            <dialog id="play-game" class="dialog-body col-span-6 play-game">
 
-    
+            </dialog>
+        </dialog>
+    </div>
 </body>
+
 </html>

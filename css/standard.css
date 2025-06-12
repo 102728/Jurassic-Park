@@ -5,22 +5,35 @@
  * And will be updated as needed to reflect changes in design or functionality.
  */
 
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "Jurassic Park";
-    src: url(../fonts/jurassic_park.ttf) format("truetype");
+    src: url(../media/fonts/jurassic_park.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Levi Windows";
-    src: url(../fonts/levi_windows.ttf) format("truetype");
+    src: url(../media/fonts/levi_windows.ttf) format("truetype");
 }
 
-html {
+html,
+body {
     font-size: 1.2rem;
+    background-color: #333;
+}
+
+/* Set our own grid. */
+.grid {
+    padding: 2em;
+    gap: 1em;
+    grid-template-rows: 200px 3fr 2fr;
 }
 
 /* Dev note: */
-/* Use only for special titles such as the name of a dino/building on the info page. */
+/* Use h1 only for special titles such as the name of a dino/building on the info page. */
 h1 {
     font-family: "Jurassic Park", sans-serif;
     font-weight: 100;
@@ -50,6 +63,11 @@ p {
     color: #333;
     line-height: 1.5;
     text-align: justify;
+}
+
+/* Used to make an element take the full height available. */
+.h-full {
+    height: 100%;
 }
 
 /* Color classes for different types of dinosaurs and buildings. */
