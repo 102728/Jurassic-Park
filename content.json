@@ -107,25 +107,25 @@
         }
     },
     "buildings": {
-        "visitor_centre": {
-            "description": "",
-            "capacity": 0,
+        "visitor_center": {
+            "description": "The Visitor Center is one of the most important builings in the entire park. It's interior is round, with every quarter having a use. In the center, there's skeletal statues of a Tyrannosaurus and a Alamosaurus for the exhibition 'When Dinosaurs ruled the Earth. It is used for all kinds of things: being the central hub for visitors, being the biggest dining service on the island, having the garage for the tour cars and employee cars as well as containing the park's control room in an area restricted to visitors.",
+            "capacity": 1000,
             "type": "entertainment"
         },
         "safari_lodges": {
-            "description": "",
-            "capacity": 0,
+            "description": "The Safari Lodge is a hotel for vistors who wish to stay overnight rather than visit the park for a single night. The hotel located at the west side of the park, with a beautiful view over a lush safari zone. Visitors can stay at the hotel for a maximum of three nights, and the hotel offers breakfast and dining accommodations.",
+            "capacity": 300,
             "type": "accommodation"
         },
         "tour_station": {
             "description": "",
             "capacity": 0,
-            "type": "transport"
+            "type": "entertainment"
         },
         "river_cruise": {
-            "description": "",
-            "capacity": 0,
-            "type": "attraction"
+            "description": "Step aboard our exiting River Cruise, a river attraction going through the areas of the Pteranodon, Stegosaurus, Brachiosaurus, Parasaurolophus and Proceratosaurus. Get close with the herbivores, whilst being able to look at the Pteranodon and Proceratosaurus without any glass. You are required to leave your bags at the station, because we will not allow visitors to bring food etc. near the dinosaurs.",
+            "capacity": 600,
+            "type": "entertainment"
         },
         "helicopter_platform": {
             "description": "",
@@ -135,7 +135,7 @@
         "toilet": {
             "description": "",
             "capacity": 0,
-            "type": "utility"
+            "type": "accommodation"
         }
     }
 }
