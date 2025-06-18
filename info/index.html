@@ -17,20 +17,77 @@
 <body class="w-full h-full">
     <div class="grid w-full h-full">
         <dialog id="map" class="dialog-body col col-span-6 map">
-            <p>
-                This is gonna be the map
-            </p>
+
         </dialog>
 
         <dialog id="banner" class="dialog-body col col-span-6 banner">
             <h1 id="inf-name">Brachiosaurus</h1>
-            <img id="inf-img" src="" alt="">
+            <img id="inf-img" src="none" alt="">
         </dialog>
 
         <dialog id="content" class="dialog-body col col-span-6 content">
-            <p id="inf-general-information">
-                This is gonna be the content 
-            </p>
+            <div class="dino-info-container">
+                <aside class="infobox">
+                    <div class="infobox-header">
+                        <h3 id="inf-name-sidebar">Brachiosaurus</h3>
+                    </div>
+
+                    <div class="infobox-image">
+                        <img id="inf-img-sidebar" src="none" alt="Dinosaur Image" class="infobox-img">
+                    </div>
+
+                    <div class="infobox-section">
+                        <h4>Species information</h4>
+                        <table class="infobox-table">
+                            <tbody>
+                                <tr class="infobox-row">
+                                    <td class="infobox-label">Scientific Name</td>
+                                    <td class="infobox-data" id="inf-scientific-name">-</td>
+                                </tr>
+                                <tr class="infobox-row">
+                                    <td class="infobox-label">Period</td>
+                                    <td class="infobox-data" id="inf-period">-</td>
+                                </tr>
+                                <tr class="infobox-row">
+                                    <td class="infobox-label">Diet</td>
+                                    <td class="infobox-data" id="inf-diet">-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="infobox-section">
+                        <h4>Park information</h4>
+                        <table class="infobox-table">
+                            <tbody>
+                                <tr class="infobox-row">
+                                    <td class="infobox-label">Zone</td>
+                                    <td class="infobox-data" id="inf-zone">-</td>
+                                </tr>
+                                <tr class="infobox-row">
+                                    <td class="infobox-label">Enclosure</td>
+                                    <td class="infobox-data" id="inf-enclosure">-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </aside>
+
+                <main class="article-content">
+                    <section class="content-section">
+                        <h2>Overview</h2>
+                        <p id="inf-overview">
+                            Being over 13 meters when standing fully upright, Brachiosaurus is far and away the largest dinosaur found in
+                            Jurassic Park. The word 'Brachiosaurus' means 'arm lizard' in latin, referring to the fact that brachiosaurus
+                            has larger forelimbs rather than larger hindlimbs. Due to this, It's torso is angled upwards quite
+                            significantly. The second part of it's name, 'Altithorax', means 'deep chest', referring to the relatively large
+                            and deep chest the Brachiosaurus had compared to most other sauropods. Because Brachiosaurus weighed around 30
+                            tonnes, it had to eat around 300 kilogram of plants like conifers and tree ferns. This is so much that it has to
+                            eat for around 15 hours every day just to sustain itself.
+                        </p>
+                    </section>
+                </main>
+            </div>
         </dialog>
 
         <dialog id="search" class="dialog-body col col-span-6 search">
@@ -40,7 +97,8 @@
         </dialog>
     </div>
 </body>
-<script src="../js/fetchurlinfo.js"></script>
+<script src="../js/loadmap.js"></script>
+<script src="../js/fetch_info_from_url.js"></script>
 <script src="../js/info.js"></script>
 
 </html>

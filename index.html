@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="node_modules/95css/css/95css.css">
     <link rel="stylesheet" href="css/standard.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/map.css">
 </head>
 
 <body class="w-full h-full">
     <div class="grid w-full h-full">
         <dialog id="map" class="dialog-body col col-span-6 map">
-            <dialog id="legend" class="dialog-body col-span-4 legend"></dialog>
+            <!-- See ../js/loadmap.js -->
         </dialog>
 
         <dialog id="banner" class="dialog-body col col-span-6 banner">
@@ -58,39 +59,39 @@
                     <h3>Leaderboard:</h3>
                     <table>
                         <tr>
-                            <td>1:</td>
-                            <td>Menno</td>
-                            <td>112 pts</td>
+                            <td id="lb-place1">1:</td>
+                            <td id="lb-name-pl1">Menno</td>
+                            <td id="lb-pts1">112 pts</td>
                         </tr>
                         <tr>
-                            <td>2:</td>
-                            <td>Stone</td>
-                            <td>92 pts</td>
+                            <td id="lb-place2">2:</td>
+                            <td id="lb-name-pl2">Stone</td>
+                            <td id="lb-pts2">92 pts</td>
                         </tr>
                         <tr>
-                            <td>3:</td>
-                            <td>Rianne</td>
-                            <td>89 pts</td>
+                            <td id="lb-place3">3:</td>
+                            <td id="lb-name-pl3">Rianne</td>
+                            <td id="lb-pts3">89 pts</td>
                         </tr>
                         <tr>
-                            <td>4:</td>
-                            <td>Robin</td>
-                            <td>84 pts</td>
+                            <td id="lb-place4">4:</td>
+                            <td id="lb-name-pl4">Robin</td>
+                            <td id="lb-pts4">84 pts</td>
                         </tr>
                         <tr>
-                            <td>5:</td>
-                            <td>Ivory</td>
-                            <td>81 pts</td>
+                            <td id="lb-place5">5:</td>
+                            <td id="lb-name-pl5">Ivory</td>
+                            <td id="lb-pts5">81 pts</td>
                         </tr>
                         <tr>
-                            <td>6:</td>
-                            <td>Brandon</td>
-                            <td>74 pts</td>
+                            <td id="lb-place6">6:</td>
+                            <td id="lb-name-pl6">Brandon</td>
+                            <td id="lb-pts6">74 pts</td>
                         </tr>
                         <tr>
-                            <td>7:</td>
-                            <td>Perci</td>
-                            <td>34 pts</td>
+                            <td id="lb-place7">7:</td>
+                            <td id="lb-name-pl7">Perci</td>
+                            <td id="lb-pts7">34 pts</td>
                         </tr>
                     </table>
                 </dialog>
@@ -98,5 +99,6 @@
         </dialog>
     </div>
 </body>
+<script src="../js/loadmap.js"></script>
 
 </html>
