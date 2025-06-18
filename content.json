@@ -8,6 +8,7 @@
                     "Triceratops Horridus",
                     "Triceratops Prorsus"
                 ],
+                "diet": "Herbivore",
                 "description": "Triceratops, one of the most recognized and beloved dinosaurs out of all. It's name means 'Three-horned face', derived from the greek words 'trí', 'kéras' and 'ṓps' meaning 'three', 'horn' and 'face' respectively. Standing at over 3 meters tall and over 8 meters in length, the Triceratops could weigh up to 10 metric tons, so the same weight as 4-5 cars. On top of that, it's iconic horns could grow to be over a meter in length. It will eat almost any plant, with the exeption of ferns and palms."
             },
             "brachiosaurus": {
@@ -16,6 +17,7 @@
                 "species": [
                     "Brachiosaurus Altithorax"
                 ],
+                "diet": "Herbivore",
                 "description": "Being over 13 meters when standing fully upright, Brachiosaurus is far and away the largest dinosaur found in Jurassic Park. The word 'Brachiosaurus' means 'arm lizard' in latin, referring to the fact that brachiosaurus has larger forelimbs rather than larger hindlimbs. Due to this, It's torso is angled upwards quite significantly. The second part of it's name, 'Altithorax', means 'deep chest', referring to the relatively large and deep chest the Brachiosaurus had compared to most other sauropods. Because Brachiosaurus weighed around 30 tonnes, it had to eat around 300 kilogram of plants like conifers and tree ferns. This is so much that it has to eat for around 15 hours every day just to sustain itself."
             },
             "gallimimus": {
@@ -24,7 +26,8 @@
                 "species": [
                     "Gallimimus Bullatus"
                 ],
-                "description": ""
+                "diet": "Omnivore",
+                "description": "Originating from what is now the Gobi desert, the Gallimimus is the only dinosaur in Jurassic Park with feathers. On top of that, it is the only dinosaur in the park to have wings. Unfortunatly for them, they are unable to fly with them. Their wings are simply way to small to carry their 450 kilograms of body weight. The Gallimimus' name means 'chicken mimic' when translated from greek. this is based on the fact that teh closest living relatives to the Gallimimus are medium-sized landfowl like turkeys and peacocks. This connection is also the basis for statements like 'dinosaurs are birds' you might see floating around online. a Gallimimus feeds on both both plant and animal life, being an opportunistic omnivore eating both plants and smaller animals with a beak quite simulair to that of a duck."
             },
             "parasaurolophus": {
                 "location": "Western North America, Asia",
@@ -33,7 +36,8 @@
                     "Parasaurolophus Walkeri",
                     "Parasaurolophus Tubicen",
                     "Parasaurolophus Cyrtocristatus"
-                ]
+                ],
+                "diet": "Herbivore"
             },
             "stegosaurus": {
                 "location": "Western North America, Portugal",
@@ -42,7 +46,8 @@
                     "Stegosaurus Stenops",
                     "Stegosaurus Ungulatus",
                     "Stegosaurus Sulcatus"
-                ]
+                ],
+                "diet": "Herbivore"
             }
         },
         "carnivores": {
@@ -51,14 +56,16 @@
                 "period": "Late Jurassic",
                 "species": [
                     "Metriacanthosaurus Parkeri"
-                ]
+                ],
+                "diet": "Carnivore"
             },
             "dilophosaurus": {
                 "location": "North America",
                 "period": "Early Jurassic",
                 "species": [
                     "Dilophosaurus Wetherilli"
-                ]
+                ],
+                "diet": "Carnivore"
             },
             "tyrannosaurus": {
                 "location": "Western North America",
@@ -66,7 +73,8 @@
                 "species": [
                     "Tyrannosaurus Rex",
                     "Tyrannosaurus Mcraeensis"
-                ]
+                ],
+                "diet": "Carnivore"
             },
             "velociraptor": {
                 "location": "Asia",
@@ -74,28 +82,32 @@
                 "species": [
                     "Velociraptor Mongoliensis",
                     "Velociraptor Osmolskae"
-                ]
+                ],
+                "diet": "Carnivore"
             },
             "baryonyx": {
                 "location": "United Kingdom",
                 "period": "Early Cretaceous",
                 "species": [
                     "Baryonyx Walkeri"
-                ]
+                ],
+                "diet": "Carnivore"
             },
             "proceratosaurus": {
                 "location": "United Kingdom",
                 "period": "Middle Jurassic",
                 "species": [
                     "Proceratosaurus Bradleyi"
-                ]
+                ],
+                "diet": "Carnivore"
             },
             "segisaurus": {
                 "location": "Western North America",
                 "period": "Early Jurassic",
                 "species": [
                     "Segisaurus Halli"
-                ]
+                ],
+                "diet": "Carnivore"
             }
         },
         "flying": {
@@ -105,7 +117,8 @@
                 "species": [
                     "Pteranodon Longiceps",
                     "Pteranodon Sternbergi"
-                ]
+                ],
+                "diet": "Carnivore"
             }
         }
     },
