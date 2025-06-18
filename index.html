@@ -22,6 +22,9 @@
 
         <dialog id="banner" class="dialog-body col col-span-6 banner">
             <h1>Welcome to the map of Jurassic Park!</h1>
+            <div class="jurassic-logo-container">
+                <img class="jurassic-logo" src="images/logo.png">
+            </div>
         </dialog>
 
         <dialog id="content" class="dialog-body col col-span-6 h-full content">
@@ -40,11 +43,57 @@
             <dialog id="picture" class="dialog-body col-span-6 picture"></dialog>
             <dialog id="searchInput" class="dialog-body col-span-6 searchInput">
                 <icon></icon>
-                <span>Click and type to search.</span>
+                <span>Dino</span>
             </dialog>
-            <dialog id="searchResults" class="dialog-body col-span-6 searchResults"></dialog>
+            <dialog id="searchResults" class="dialog-body col-span-6 searchResults">
+                <p>T-Rex</p>
+                <p>Velociraptors</p>
+                <p>Brachiosaurus</p>
+                <p>Galimimus</p>
+                <p>Triceratops</p>
+            </dialog>
             <dialog id="play-game" class="dialog-body col-span-6 play-game">
-
+                <button class="playBtn">Play The Jurassic Game</button>
+                <dialog id="leaderboard" class="dialog-body col-span-4 legend leaderboard">
+                    <h3>Leaderboard:</h3>
+                    <table>
+                        <tr>
+                            <td>1:</td>
+                            <td>Menno</td>
+                            <td>112 pts</td>
+                        </tr>
+                        <tr>
+                            <td>2:</td>
+                            <td>Stone</td>
+                            <td>92 pts</td>
+                        </tr>
+                        <tr>
+                            <td>3:</td>
+                            <td>Rianne</td>
+                            <td>89 pts</td>
+                        </tr>
+                        <tr>
+                            <td>4:</td>
+                            <td>Robin</td>
+                            <td>84 pts</td>
+                        </tr>
+                        <tr>
+                            <td>5:</td>
+                            <td>Ivory</td>
+                            <td>81 pts</td>
+                        </tr>
+                        <tr>
+                            <td>6:</td>
+                            <td>Brandon</td>
+                            <td>74 pts</td>
+                        </tr>
+                        <tr>
+                            <td>7:</td>
+                            <td>Perci</td>
+                            <td>34 pts</td>
+                        </tr>
+                    </table>
+                </dialog>
             </dialog>
         </dialog>
     </div>
