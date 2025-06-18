@@ -118,8 +118,8 @@
             "type": "accommodation"
         },
         "tour_station": {
-            "description": "",
-            "capacity": 0,
+            "description": "At the tour station, take a seat in one of our fifteen Ford Explorer XLT automated tour cars for a tour throughout the park. These touring cars a locked to a electric railgrid, and thus don't need any drivers to pilot the car. Take a close look at some of our largest and most dangerous carnivores, and pass through the territories of the friendly herbivores. Because the cars drive automatically, you enter and exit the touring car at the tour station.",
+            "capacity": 75,
             "type": "entertainment"
         },
         "river_cruise": {
@@ -128,13 +128,13 @@
             "type": "entertainment"
         },
         "helicopter_platform": {
-            "description": "",
-            "capacity": 0,
+            "description": "This is the helicopter platform of Jurassic Park. The helipad is only used for medical emergencies, VIP guests and John Hammond himself. In case you were wondering, the helicopters used by Jurassic Park are two Agusta A-109A helicopters.",
+            "capacity": 15,
             "type": "transport"
         },
         "toilet": {
-            "description": "",
-            "capacity": 0,
+            "description": "There are multiple toilets located around the park, each being decorated in the Jurassic Park style.",
+            "capacity": 60,
             "type": "accommodation"
         }
     }
