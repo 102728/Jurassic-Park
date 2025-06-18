@@ -7,21 +7,24 @@
                 "species": [
                     "Triceratops Horridus",
                     "Triceratops Prorsus"
-                ]
+                ],
+                "description": "Triceratops, one of the most recognized and beloved dinosaurs out of all. It's name means 'Three-horned face', derived from the greek words 'trí', 'kéras' and 'ṓps' meaning 'three', 'horn' and 'face' respectively. Standing at over 3 meters tall and over 8 meters in length, the Triceratops could weigh up to 10 metric tons, so the same weight as 4-5 cars. On top of that, it's iconic horns could grow to be over a meter in length. It will eat almost any plant, with the exeption of ferns and palms."
             },
             "brachiosaurus": {
                 "location": "North America",
                 "period": "Late Jurassic",
                 "species": [
                     "Brachiosaurus Altithorax"
-                ]
+                ],
+                "description": "Being over 13 meters when standing fully upright, Brachiosaurus is far and away the largest dinosaur found in Jurassic Park. The word 'Brachiosaurus' means 'arm lizard' in latin, referring to the fact that brachiosaurus has larger forelimbs rather than larger hindlimbs. Due to this, It's torso is angled upwards quite significantly. The second part of it's name, 'Altithorax', means 'deep chest', referring to the relatively large and deep chest the Brachiosaurus had compared to most other sauropods. Because Brachiosaurus weighed around 30 tonnes, it had to eat around 300 kilogram of plants like conifers and tree ferns. This is so much that it has to eat for around 15 hours every day just to sustain itself."
             },
             "gallimimus": {
                 "location": "Mongolia",
                 "period": "Late Cretaceous",
                 "species": [
                     "Gallimimus Bullatus"
-                ]
+                ],
+                "description": ""
             },
             "parasaurolophus": {
                 "location": "Western North America, Asia",
