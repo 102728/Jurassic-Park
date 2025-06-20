@@ -49,7 +49,7 @@
                     "Stegosaurus Sulcatus"
                 ],
                 "diet": "Herbivore",
-                "description": ""
+                "description": "The Stegosaurus is perhaps the single most recognizable dinosaurs when it comes to physical features alone. its rounded back, large hind limbs compared to their front counterparts, the spiked tail and most of all, the distictive kite-shaped upright plates on it's back. The Stegosaurus can grow to weigh up to 4 tonnes as well as being over four meters in height, including the plates. These plates can grow to be over 60 centimeters in length themselves. The tail spikes, also called 'Thagomizers' are generally between 60 and 90 centimeters long, and the Stegosaurus uses these spikes as a weapon against predators by pushing off the ground sideways with it's short put musculair front limbs, rotating on it's hind limbs and thus creating a powerful swing that can easily crush and pierce bones. In addition to this, the back plates stopped any attack from above, simply because a predator doesn't enjoy their mouthes being impaled."
             }
         },
         "carnivores": {
@@ -59,7 +59,8 @@
                 "species": [
                     "Metriacanthosaurus Parkeri"
                 ],
-                "diet": "Carnivore"
+                "diet": "Carnivore",
+                "description": "The Metriacanthosaurus is on the small side for predators of it's time, being a maximum of 2 meters high. Due to this, it often hunted in packs of 3-4. This way, it could triumph over prey like the Stegosaurus, who is also found in our park!. Metriacanthosaurus means 'moderate spine lizard', referring to it's spine being relatively large compared to it's body and other predators of it's size, but still being smaller than those of a larger predators like the Allosaurus. If you listen closely, you might be able to hear them communicate with eachother when you are near the north dock"
             },
             "dilophosaurus": {
                 "location": "North America",
