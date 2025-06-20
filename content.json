@@ -37,7 +37,8 @@
                     "Parasaurolophus Tubicen",
                     "Parasaurolophus Cyrtocristatus"
                 ],
-                "diet": "Herbivore"
+                "diet": "Herbivore",
+                "description": "Parasaurolophus is one of very few dinosaurs that can walk both bipedal as well as quadrupedal. this allows it to both reach higher vegetation and gain the 'upper' hand in a potential encounter with smaller predators. The highest the over 5 tonnes weighing Parasaurolophus can reach is 4 meters. It uses a beak to lots of plants at a time, and uses large amounts of teeth in the back of it's mouth to grind and digest them. By far their most memorable feature is their large backwards cranial crest. The size and color of this crest differs between sex, and it is primarily used for sex identification and communicative sound amplification. Other theories about the crest included it being a snorkel for the Parasaurolophus, but this was disproven by the dinosaurs in our park."
             },
             "stegosaurus": {
                 "location": "Western North America, Portugal",
@@ -47,7 +48,8 @@
                     "Stegosaurus Ungulatus",
                     "Stegosaurus Sulcatus"
                 ],
-                "diet": "Herbivore"
+                "diet": "Herbivore",
+                "description": ""
             }
         },
         "carnivores": {
