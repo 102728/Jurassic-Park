@@ -68,7 +68,8 @@
                 "species": [
                     "Dilophosaurus Wetherilli"
                 ],
-                "diet": "Carnivore"
+                "diet": "Carnivore",
+                "description": "Dilophosaurus, meaning 'Two-crested lizard', was one of the first dinosaurs to be brought back to life in the labs of Jurassic Park. It's name refers to the two crests it has on its head, going from the nose all the way to above the eyes. these frills are quite simulair to those found on cassowaries. Standing at an average of around 2 meters tall and weighing over 300 kilograms, the Dilophosaurus is a scavanger rather than a predator, feeding off weak and small dinosaurs to survive. It also has a considerably weaker bite force compared to other carnivores of it's time. This is because rather than biting, the Dilophosaurus attacked with large claws on it's hands and feet."
             },
             "tyrannosaurus": {
                 "location": "Western North America",
@@ -77,7 +78,8 @@
                     "Tyrannosaurus Rex",
                     "Tyrannosaurus Mcraeensis"
                 ],
-                "diet": "Carnivore"
+                "diet": "Carnivore",
+                "description": "When you think of a dinosaur, chances are you think of a Tyrannosaurus, and while the T. rex was long deemed the only species, recently scientist found evidence for a second species of tyrannosaurus; the T. mcraeensis. With it's name meaning 'tyrant lizard king', the tyrannosaurus was one of the last dinosaur species alive, only living in the time period right before the great dinosaur extiction. growing to almost 5 meters in height, the Tyrannosaurus was of the largest dinosaurs of its time, as well as it being the largest predator in our park. The bite force of the tyrannosaurus is unmatched, with it having the highest bite force of any terrestrial animal that has ever lived. It's jaws could even open up to 80 degrees! And even though the forearms are very small compared to the rest of it's body mass, they were very strong, being able to hold down struggling prey whilst the Tyrannosaurus used it's bone-crushing bite to eliminate it's prey."
             },
             "velociraptor": {
                 "location": "Asia",
@@ -86,7 +88,8 @@
                     "Velociraptor Mongoliensis",
                     "Velociraptor Osmolskae"
                 ],
-                "diet": "Carnivore"
+                "diet": "Carnivore",
+                "description": "The velociraptor is a well-known predator, being one of the most famous dinosaurs in our park. It grows to a height of around 2.5 meters, and usually hunts in pack in order to take down large foes. It's most common prey were smaller sauropods, like the Apatosaurus. Despite this, the most famous fossil found of a Velociraptor is one where it was fighting a Protoceratops when both got buried in sand, likely because of a collapsing dune. The raptor also had considerable jumping skills, being able to clear five meters without too much trouble. this helped with getting on top of it's prey, where the victim would not have been able to reach the Velociraptor all to easily."
             },
             "baryonyx": {
                 "location": "United Kingdom",
