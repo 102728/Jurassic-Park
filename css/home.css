@@ -94,6 +94,10 @@
     grid-column: 1 / 2;
 }
 
+.searchResults {
+    height: 265px;
+}
+
 /* --- Mobile Layout (Flexbox) --- */
 @media screen and (max-width: 820px) {
     .grid {
