@@ -2,34 +2,43 @@ const mapData = {
     dinosaurs: {
         herbivores: {
             triceratops: { x: 64, y: 21 },
-            brachiosaurus: { x: 53, y: 36 },
+            brachiosaurus: [
+                { x: 53, y: 36 },
+                { x: 58, y: 51 }
+            ],
             gallimimus: { x: 51, y: 42 },
             parasaurolophus: { x: 53, y: 48 },
-            stegosaurus: { x: 30, y: 70 }
+            stegosaurus: { x: 68, y: 68 }
         },
         carnivores: {
-            metriacanthosaurus: { x: 75, y: 30 },
-            dilophosaurus: { x: 85, y: 55 },
-            tyrannosaurus: { x: 70, y: 75 },
-            velociraptor: { x: 90, y: 20 },
-            baryonyx: { x: 55, y: 80 },
-            proceratosaurus: { x: 45, y: 60 },
-            segisaurus: { x: 80, y: 45 }
+            metriacanthosaurus: { x: 79, y: 17 },
+            dilophosaurus: [
+                { x: 57, y: 27 },
+                { x: 47, y: 56 }
+            ],
+            tyrannosaurus: { x: 72, y: 29 },
+            velociraptor: { x: 74, y: 39 },
+            baryonyx: { x: 84, y: 41 },
+            proceratosaurus: { x: 54, y: 59 },
+            segisaurus: { x: 61, y: 81 }
         },
         flying: {
-            pteranodon: { x: 50, y: 15 }
+            pteranodon: { x: 59, y: 70 }
         }
     },
     buildings: {
-        visitor_center: { x: 50, y: 50, icon: "building" },
-        safari_lodges: { x: 20, y: 80, icon: "cabin" },
-        tour_station: { x: 35, y: 40, icon: "tourcar" },
-        river_cruise: { x: 65, y: 30, icon: "tourboat" },
-        helicopter_platform: { x: 80, y: 10, icon: "helicopter" },
+        visitor_center: { x: 33, y: 42, icon: "building" },
+        tour_station: { x: 44, y: 33, icon: "tourcar" },
+        river_cruise: { x: 52, y: 65, icon: "tourboat" },
+        helicopter_platform: { x: 73, y: 81, icon: "helicopter" },
         toilet: [
-            { x: 25, y: 55, icon: "toilet" },
-            { x: 75, y: 65, icon: "toilet" }
-        ]
+            { x: 61, y: 41, icon: "toilet" },
+            { x: 73, y: 22, icon: "toilet" }
+        ],
+        harbor: [
+            { x: 89, y: 54, icon: "harbor" },
+            { x: 63, y: 7, icon: "harbor" }
+        ],
     }
 };
 
@@ -56,29 +65,35 @@ function createMapIcon(type, name, x, y, iconClass = null) {
     icon.dataset.name = name;
     icon.dataset.originalX = x;
     icon.dataset.originalY = y;
-    
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const activeDino = urlParams.get("dino");
+    if (activeDino === name) {
+        icon.classList.add("active");
+    }
+
     icon.addEventListener("click", () => handleIconClick(type, name));
-    
+
     return icon;
 }
 
 function updateIconPositions() {
     const mapContainer = document.getElementById("rmap");
     if (!mapContainer) return;
-    
+
     const icons = mapContainer.querySelectorAll("ic[data-original-x]");
     const containerRect = mapContainer.getBoundingClientRect();
     const containerWidth = containerRect.width;
     const containerHeight = containerRect.height;
-    
+
     const mapImage = new Image();
-    mapImage.onload = function() {
+    mapImage.onload = function () {
         const imageAspectRatio = mapImage.naturalWidth / mapImage.naturalHeight;
         const containerAspectRatio = containerWidth / containerHeight;
-        
+
         let imageDisplayWidth, imageDisplayHeight;
         let imageOffsetX = 0, imageOffsetY = 0;
-        
+
         if (containerAspectRatio > imageAspectRatio) {
             imageDisplayHeight = containerHeight;
             imageDisplayWidth = containerHeight * imageAspectRatio;
@@ -88,43 +103,65 @@ function updateIconPositions() {
             imageDisplayHeight = containerWidth / imageAspectRatio;
             imageOffsetY = (containerHeight - imageDisplayHeight) / 2;
         }
-        
+
         icons.forEach(icon => {
             const originalX = parseFloat(icon.dataset.originalX);
             const originalY = parseFloat(icon.dataset.originalY);
-            
+
             const actualX = imageOffsetX + (originalX / 100) * imageDisplayWidth;
             const actualY = imageOffsetY + (originalY / 100) * imageDisplayHeight;
-            
+
             icon.style.left = `${actualX}px`;
             icon.style.top = `${actualY}px`;
         });
     };
-    
+
     mapImage.src = window.location.pathname.includes("/info/") ? "../images/rmap.png" : "images/rmap.png";
 }
 
 function handleIconClick(type, name) {
-    window.location.href = `./info/index.html?dino=${name}`;
+    if (window.location.pathname.includes("/info/")) {
+        window.location.href = `./index.html?dino=${name}`;
+    } else {
+        window.location.href = `./info/index.html?dino=${name}`;
+    }
 }
 
 function generateMapHtml() {
     const mapContainer = document.createElement("div");
     mapContainer.id = "rmap";
     mapContainer.className = "rmap";
-    
+
     Object.entries(mapData.dinosaurs.herbivores).forEach(([name, pos]) => {
-        mapContainer.appendChild(createMapIcon("herbivore", name, pos.x, pos.y));
+        if (Array.isArray(pos)) {
+            pos.forEach(position => {
+                mapContainer.appendChild(createMapIcon("herbivore", name, position.x, position.y));
+            });
+        } else {
+            mapContainer.appendChild(createMapIcon("herbivore", name, pos.x, pos.y));
+        }
     });
-    
+
     Object.entries(mapData.dinosaurs.carnivores).forEach(([name, pos]) => {
-        mapContainer.appendChild(createMapIcon("carnivore", name, pos.x, pos.y));
+        if (Array.isArray(pos)) {
+            pos.forEach(position => {
+                mapContainer.appendChild(createMapIcon("carnivore", name, position.x, position.y));
+            });
+        } else {
+            mapContainer.appendChild(createMapIcon("carnivore", name, pos.x, pos.y));
+        }
     });
-    
+
     Object.entries(mapData.dinosaurs.flying).forEach(([name, pos]) => {
-        mapContainer.appendChild(createMapIcon("flying", name, pos.x, pos.y));
+        if (Array.isArray(pos)) {
+            pos.forEach(position => {
+                mapContainer.appendChild(createMapIcon("flying", name, position.x, position.y));
+            });
+        } else {
+            mapContainer.appendChild(createMapIcon("flying", name, pos.x, pos.y));
+        }
     });
-    
+
     Object.entries(mapData.buildings).forEach(([name, data]) => {
         if (Array.isArray(data)) {
             data.forEach(pos => {
@@ -134,7 +171,7 @@ function generateMapHtml() {
             mapContainer.appendChild(createMapIcon("building", name, data.x, data.y, data.icon));
         }
     });
-    
+
     const legend = document.createElement("dialog");
     legend.id = "legend";
     legend.className = "dialog-body col-span-4 legend";
@@ -158,34 +195,42 @@ function generateMapHtml() {
         <ic class="cabin"></ic>
         <span>Cabin</span>
     `;
-    
+
     return { mapContainer, legend };
 }
 
 function loadMap() {
-    const mapContainer = document.getElementById("map");
-    if (mapContainer) {
-        const { mapContainer: generatedMap, legend } = generateMapHtml();
+    let mapContainer = document.getElementById("map");
+
+    if (!mapContainer) {
+        console.error("Map container not found");
+        return;
+    }
+
+    const { mapContainer: generatedMap, legend } = generateMapHtml();
+
+    if (window.location.pathname.includes("/info/")) {
         mapContainer.appendChild(generatedMap);
         mapContainer.appendChild(legend);
-        
-        const debouncedUpdate = debounce(updateIconPositions, 100);
-        
-        setTimeout(() => {
-            updateIconPositions();
-        }, 200);
-        
-        window.addEventListener("resize", debouncedUpdate);
-        
-        if (window.ResizeObserver) {
-            const resizeObserver = new ResizeObserver(debouncedUpdate);
-            resizeObserver.observe(generatedMap);
-        }
     } else {
-        console.error("Map container not found");
+        mapContainer.appendChild(generatedMap);
+        mapContainer.appendChild(legend);
+    }
+
+    const debouncedUpdate = debounce(updateIconPositions, 100);
+
+    setTimeout(() => {
+        updateIconPositions();
+    }, 200);
+
+    window.addEventListener("resize", debouncedUpdate);
+
+    if (window.ResizeObserver) {
+        const resizeObserver = new ResizeObserver(debouncedUpdate);
+        resizeObserver.observe(generatedMap);
     }
 }
 
-document.addEventListener("DOMContentLoaded", () => { 
-    loadMap(); 
+document.addEventListener("DOMContentLoaded", () => {
+    loadMap();
 });

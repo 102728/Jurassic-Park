@@ -10,11 +10,10 @@
 .legend,
 .leaderboard {
     width: 100%;
-    box-sizing: border-box; /* belangrijk voor alle elementen */
+    box-sizing: border-box;
     transition: all 0.3s ease-in-out;
 }
 
-/* --- Desktop Layout (Grid) --- */
 .map {
     grid-row: 1 / 4;
     display: grid;  
@@ -26,14 +25,14 @@
     box-sizing: border-box;
 }
 
-.banner {
-    display: flex;
-    flex-direction: row;
-}
-
 .legend {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
 }
 
 .content {
@@ -139,7 +138,7 @@
         order: 2;
         width: 100%;
         box-sizing: border-box;
-        padding: 0;
+        padding: 0.25em;
         margin: 0;
         height: auto;
     }
@@ -207,7 +206,6 @@
     .leaderboard {
         width: 100%;
         box-sizing: border-box;
-        margin: 0 0 8px 0;
         padding: 8px;
         border: 2px outset;
         overflow-y: auto;

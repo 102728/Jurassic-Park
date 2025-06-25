@@ -12,7 +12,20 @@
     overflow: hidden;
 }
 
+.map {
+    grid-row: 1 / 4;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+    max-height: 100vh;
+    height: auto;
+    box-sizing: border-box;
+}
+
 .legend {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 4fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -22,7 +35,7 @@ ic {
     aspect-ratio: 1 / 1;
     display: block;
     position: absolute;
-    width: 2em;
+    width: 5%;
     height: auto;
     border-radius: 100%;
     background-position: center;
@@ -33,6 +46,11 @@ ic {
 
 ic:hover {
     cursor: pointer;
+}
+
+ic.active {
+    border: 3px solid #FFD700;
+    /* box-shadow: 0 0 8px #FFD700; */
 }
 
 .legend ic {
