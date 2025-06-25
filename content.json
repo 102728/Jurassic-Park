@@ -97,7 +97,8 @@
                 "species": [
                     "Baryonyx Walkeri"
                 ],
-                "diet": "Carnivore"
+                "diet": "Carnivore",
+                "description": "Baryonyx, meaning 'heavy claw', is a unique predator in our park that specialized in fishing. Standing about 3 meters tall and weighing around 2 tonnes, this distinctive dinosaur had a crocodile-like snout filled with 96 sharp teeth perfect for catching fish. Its most notable feature is the massive 35-centimeter claw on each hand, which it used like a gaff hook to spear fish from rivers and lakes. Unlike other carnivores in the park, Baryonyx spent much of its time near water sources, making it semi-aquatic. You can often spot them near the river cruise route, where they demonstrate their remarkable fishing abilities."
             },
             "proceratosaurus": {
                 "location": "United Kingdom",
@@ -105,7 +106,8 @@
                 "species": [
                     "Proceratosaurus Bradleyi"
                 ],
-                "diet": "Carnivore"
+                "diet": "Carnivore",
+                "description": "Proceratosaurus, meaning 'before the horned lizard', is one of the smaller predators in Jurassic Park, standing only about 1.5 meters tall and weighing around 100 kilograms. Despite its name suggesting a connection to horned dinosaurs, it's actually an early tyrannosaur ancestor. Its most distinctive feature is a small nasal horn on its snout, which was likely used for display purposes. Being relatively small, Proceratosaurus hunted smaller prey and scavenged when opportunities arose. Its lightweight build made it incredibly fast and agile, able to chase down quick prey that larger predators couldn't catch. Visitors on the river cruise often get excellent views of these nimble hunters as they move through the forested areas of their enclosure."
             },
             "segisaurus": {
                 "location": "Western North America",
@@ -113,7 +115,8 @@
                 "species": [
                     "Segisaurus Halli"
                 ],
-                "diet": "Carnivore"
+                "diet": "Carnivore",
+                "description": "Segisaurus, named after the Segi Canyon where it was first discovered, is the smallest carnivore in Jurassic Park. Standing barely 1 meter tall and weighing only about 10 kilograms, this tiny predator is roughly the size of a large chicken. Despite its small stature, Segisaurus was an efficient hunter of insects, small lizards, and early mammals. Its long, powerful legs made it incredibly fast, capable of reaching speeds of up to 40 kilometers per hour when chasing prey or fleeing from larger predators. What makes Segisaurus unique among dinosaurs is that it had solid leg bones rather than hollow ones, making it more robust despite its small size. These delightful little dinosaurs can often be seen darting between the legs of larger herbivores in mixed enclosures."
             }
         },
         "flying": {
@@ -124,7 +127,8 @@
                     "Pteranodon Longiceps",
                     "Pteranodon Sternbergi"
                 ],
-                "diet": "Carnivore"
+                "diet": "Carnivore",
+                "description": "Pteranodon, meaning 'wing without tooth', is technically not a dinosaur but a pterosaur - a flying reptile that lived alongside dinosaurs. With a wingspan reaching up to 7 meters, Pteranodon is one of the most impressive aerial creatures in Jurassic Park. Despite having no teeth, its long, sharp beak was perfectly adapted for catching fish by diving into water from great heights. The distinctive backward-pointing crest on its head served multiple purposes: helping with aerodynamics during flight, acting as a rudder for steering, and displaying to potential mates. Male Pteranodons typically have larger crests than females. These magnificent flyers can often be seen soaring over the park's waterways, occasionally diving down to snatch fish from the surface in spectacular displays that never fail to amaze visitors."
             }
         }
     },
