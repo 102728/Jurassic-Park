@@ -260,6 +260,7 @@
         grid-row: 3 / 4;
         background-position: right;
         background-size: cover;
+        height: 220px;
     }
 
     .leaderboard {
@@ -269,6 +270,8 @@
         margin: 0;
         padding: 0;
         border: none;
+        height: 220px;
+        width: 5px;
     }
 
     .play-game {
@@ -286,6 +289,7 @@
         border: none;
         margin: 0;
         padding: 0;
+        height: 220px;
     }
 
     .legend {
